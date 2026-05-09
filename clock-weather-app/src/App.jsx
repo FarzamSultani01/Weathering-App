@@ -19,13 +19,13 @@ function App() {
   return (
     <>
     <div className="background">
-        <img src={bgImage} alt="background-day" className='bg-day' />
+      <img src={bgImage} alt="background-day" className='bg-day' />
       <div className="content">
       <Motivation />
-    <Weather />
-    <Clock />
+      <Weather />
+      <Clock />
       </div>
-    </div>
+      </div>
    
    </>
   )
