@@ -1,8 +1,8 @@
 import React from 'react'
-import 'Weather.css'
+// import 'Weather.css'
 function Weather() {
   return (
-    <div>Weather</div>
+  <></>
   )
 }
 
