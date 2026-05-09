@@ -48,6 +48,36 @@ span{
     padding: 4px;
 }
 
+.expanded_info{
+margin-top: 40px;
+ display: grid;
+grid-template-columns: repeat(2, 1fr); 
+  flex-wrap: wrap;       
+  background: rgb(255, 255, 255,0.80);
+  color: black;
+  padding: 25px;
+  padding-left: 100px;
+  width: 90%;
+  border-radius: 12px;
+  height: 40vh; 
+}
+.expanded_info   h2{
+    color: black;
+}
+.expanded_info   p{
+    color: black;
+}
+.expanded .timeShow{
+    font-size: 80px;
+}
+
+.expanded .clock_contents{
+    padding-top: 50px;
+}
+.expanded .message{
+    font-size: 18px;
+}
+
 @media screen and (max-width: 1024px) {
     .clock_continer{
         padding-left: 30px;
@@ -77,11 +107,39 @@ span{
     .btn button{
         font-size: 16px;
     }
+    .expanded_info{
+        padding-top: 30px;
+        padding-left: 50px;
+        height: 30vh;
+        width: 80%;
+    }
+    .expanded_info   h2{
+        font-size: 18px;
+    }
+     .expanded_info   p{
+        font-size: 14px;
+}
+.expanded .btn{
+    left: 60px;
+    padding: 10px 10px;
+}
+.expanded .btn button{
+    font-size: 12px;
+    padding: 8px 15px;
+}
+.expanded .btn img{
+    height: 15px;
+    width: 15px;
+}
+.expanded .clock_contents {
+margin-top: -100px;
+padding-bottom: 50px;
+
 }
 @media screen and (max-width: 600px){
     .clock_continer{
         padding-top: 90px;
-        padding-left: 10px;
+        padding-left: 30px;
         height: 100px;
        
     }
@@ -116,4 +174,33 @@ span{
         width: 15px;
         padding: 2px;
     }
+    .expanded_info{
+         display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+
+    }
+    .expanded .timeShow{
+        font-size: 60px;
+    }
+    .expanded .clock_contents{
+        padding-top: 2px;
+    }
+    .expanded .message{
+        font-size: 15px;
+    
+}
+.expanded .clock_contents {
+margin-top: 0px;
+padding-bottom: 0px;
+
+}
+.expanded .btn{
+    padding-left: 5px;
+    width: 10px;
+}
+.expanded .btn button{
+    font-size: 10px;
+    padding: 5px 10px;
+}
+}
 }
