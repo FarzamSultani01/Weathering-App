@@ -6,6 +6,8 @@ import Weather from './Components/Weather.jsx'
 import Motivation from './Components/Motivation.jsx'
 import bg_day from './assets/desktop/bg-image-daytime.jfif'
 import bg_night from '../src/assets/desktop/bg-night.jpg'
+import day_video from './assets/desktop/day.mp4'
+import night_video from './assets/desktop/night.mp4'
 
 function App() {
   const [expanded, setExpanded] = useState(false);
@@ -14,14 +16,14 @@ function App() {
  useEffect(()=>{
   const hour = new Date().getHours();
   const isDay = hour >= 6 && hour < 18;
-  setBgImage(isDay ? bg_day : bg_night);
+  setBgImage(isDay ? day_video : night_video);
  },[])
 
 
   return (
     <>
     <div className="background">
-      <img src={bgImage} alt="background-day" className='bg-day' />
+      <video src={bgImage} autoPlay loop muted className='bg-video'/>
       <motion.div className="content"
         initial={{ opacity: 1, y: 50}}  
         animate={{ opacity: 1, y: 0 }}    

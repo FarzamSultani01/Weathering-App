@@ -10,10 +10,10 @@
   color: var(--font-color);
  }
   
- .bg-day{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
- }
+  .bg-video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
